@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/byrjun.unity
+    guid: 1e31ed65e718812469207b4117bf670c
+  - enabled: 1
+    path: Assets/Scenes/level01.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/level02.unity
+    guid: 7a9ef3f5838517a4a9675a1be5e01e7a
+  - enabled: 1
+    path: Assets/Scenes/endir.unity
+    guid: 72626c90ae6affe428ef6dfc120f34cf
   m_configObjects: {}

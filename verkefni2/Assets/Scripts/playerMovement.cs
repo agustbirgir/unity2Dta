@@ -23,11 +23,11 @@ public class playerMovement : MonoBehaviour
     void FixedUpdate()
     {
         //sný player
-        if (Input.GetKey("f"))
+        if (Input.GetKey("g"))
         {
             transform.Rotate(new Vector3(0, 5, 0));
         }
-        if (Input.GetKey("g"))//snúa leikmanni
+        if (Input.GetKey("f"))//snúa leikmanni
         {
             transform.Rotate(new Vector3(0, -5, 0));
         }

@@ -16,7 +16,7 @@ public class KeepScore : MonoBehaviour
     {
         
     }
-
+    // þetta byr til kassan fyrir stiginn
     private void OnGUI()
     {
         GUI.Box(new Rect(50, 50, 50, 50), Score.ToString());

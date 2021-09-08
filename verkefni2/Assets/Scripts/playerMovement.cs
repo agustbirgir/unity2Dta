@@ -17,6 +17,7 @@ public class playerMovement : MonoBehaviour
 
     void Start()
     {
+
         Debug.Log("byrja");
     }
     // Update is called once per frame
@@ -69,31 +70,7 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        // ef player keyrir á object sem heitir hlutur
-        if (collision.collider.tag == "hlutur")
-        {
-            collision.collider.gameObject.SetActive(false);
-            count = count + 1;
-            // Debug.Log("Nú er ég komin með " + count);
-            SetCountText();//kallar á fallið
-        }
-        if (collision.collider.tag == "pikk")
-        {
-            collision.collider.gameObject.SetActive(false);
-            count = count + 5;
-            //Debug.Log("Nú er ég komin með " + count);
-            SetCountText();//kallar á fallið
-        }
-        if (collision.collider.tag == "hindrun")
-        {
-            collision.collider.gameObject.SetActive(false);
-            count = count - 1;
-            //Debug.Log("Nú er ég komin með " + count);
-            SetCountText();//kallar á fallið
-        }
-    }
+
     void SetCountText()
     {
         countText.text = "Stig: " + count.ToString();

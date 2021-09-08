@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class NextLevel : MonoBehaviour
+
+public class NextLevel2 : MonoBehaviour
 {
-    // með þessu koða er eg bara að setja upp næsta scenu
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 }

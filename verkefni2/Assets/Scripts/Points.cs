@@ -16,9 +16,9 @@ public class Points : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter(Collision collision) // þetta er stiga system fyrir leikinn
     {
-        if(collision.transform.name == "Player")
+        if(collision.collider.tag == "Player")
         {
             KeepScore.Score += 1;
             Destroy(gameObject);
